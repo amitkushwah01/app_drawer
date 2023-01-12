@@ -1,0 +1,31 @@
+import 'package:drawer/Info.dart';
+import 'package:drawer/UI.dart';
+import 'package:drawer/profile.dart';
+import 'package:drawer/setting.dart';
+import 'package:drawer/slas.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+class Head extends StatelessWidget
+{
+  Widget build(BuildContext context)
+  {
+    return Scaffold(
+      body:Column(
+        children: [
+            Row(
+              children: [
+                CircleAvatar(backgroundImage:NetworkImage('assets/img/amit.jgp')),
+                Column(mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text("Amit Kushwah",style: Textstyle20(),),
+                    Text("amitmca000@Gmail.com",style: Textstyle15(),)
+                  ],
+                ),
+              ],
+            ),
+
+        ],
+      )
+    );
+  }
+}
